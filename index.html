@@ -4,7 +4,7 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' rel='stylesheet'>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
@@ -13,36 +13,15 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <style>
-      .job { margin-bottom: 2em; }
-      .job h4 { margin: 0 0 0.2em 0; font-size: 1em; color: #333; }
-      .job .meta { font-size: 0.85em; color: #666; margin-bottom: 0.5em; }
-      .job ul { margin: 0.4em 0 0 1.2em; padding: 0; }
-      .job ul li { margin-bottom: 0.25em; font-size: 0.92em; }
-      .employer { border-left: 3px solid #9ddcff; padding-left: 1em; margin-bottom: 2.5em; }
-      .employer-name { font-size: 1.05em; font-weight: bold; color: #222; margin: 0 0 1em 0; }
-      .skill-tag {
-        display: inline-block;
-        background: #e8f4fb;
-        border: 1px solid #9ddcff;
-        border-radius: 3px;
-        padding: 2px 8px;
-        margin: 3px 3px 3px 0;
-        font-size: 0.85em;
-      }
-      .contact-item { margin-bottom: 0.5em; font-size: 0.9em; }
-      .contact-item a { color: #267cb9; }
-      section#main-content h3 { margin-top: 1.8em; }
-    </style>
 
-    <title>Keith Ellman — Data Science Engineer</title>
+    <title>Keith Ellman — Senior AI Engineer</title>
   </head>
 
   <body>
     <header>
       <div class="inner">
         <h1>Keith Ellman</h1>
-        <h2>Data Science Engineer &nbsp;|&nbsp; Data Science &amp; Big Data</h2>
+        <h2>Senior AI Engineer &nbsp;|&nbsp; Cloud Platform &amp; Data Science</h2>
         <a href="https://github.com/kellman88" class="button"><small>Follow me on</small> GitHub</a>
       </div>
     </header>
@@ -54,11 +33,11 @@
 
           <h3>About</h3>
           <p>
-            With over 12 years in the tech field, I'm a Data Science Engineer at Ready Education driven by a
-            mission to leverage cloud technologies and data pipelines to drive efficiency and innovation.
-            My competencies span AWS services, infrastructure as code with Terraform, and serverless solutions —
-            reflecting a deep commitment to advancing data science. I bring diverse technical insights across
-            data engineering, machine learning, and distributed systems.
+            I'm a Senior AI Engineer with 12+ years of experience, most energized by building AI and ML systems —
+            LLM-powered recommendation engines, RAG chatbots, and embedded analytics using Amazon Bedrock and OpenSearch.
+            What sets me apart is the ability to build end-to-end: from Terraform infrastructure and Airflow orchestration
+            to production AI agents. I've shipped multi-region data platforms serving 400+ customers and
+            prototype-to-production ML applications on AWS.
           </p>
 
           <h3>Experience</h3>
@@ -69,9 +48,12 @@
               <h4>Data Science Engineer</h4>
               <p class="meta">November 2020 – Present &nbsp;·&nbsp; Toronto, Ontario, Canada</p>
               <ul>
-                <li>Built data pipelines using AWS Glue, EMR, and Athena to enhance data processing efficiency.</li>
-                <li>Implemented infrastructure as code with Terraform to manage MySQL, RDS, and Airflow for smooth data workflows.</li>
-                <li>Developed serverless applications and Docker containers using Golang and Python for scalable data solutions.</li>
+                <li>Built multi-region data pipelines using AWS Glue, EMR, and Athena to process 400+ customers' data in under 40 minutes, enabling downstream analytics dashboards and AI chatbot integrations.</li>
+                <li>Designed and built greenfield Airflow infrastructure on AWS from scratch: Terraform modules across test/QA/prod environments for SOC2 compliance, Packer-built AMIs with ASG launch templates, Ansible for configuration management, RDS backend, S3-managed DAG resources, and OIDC integration for SSO. Deployed CI/CD via GitHub Actions with self-hosted runners.</li>
+                <li>Built a secure Athena-backed data export API in Go on ECS with customer-isolated partitioning and API key auth, enabling self-serve datalake access for downstream consumers.</li>
+                <li>Prototyped an LLM-powered recommendation engine in Go using Amazon Bedrock embeddings, cosine similarity ranking, and an agent-generated rationale layer explaining each recommendation from source context.</li>
+                <li>Deployed Apache Superset on ECS with a custom image for embedded analytics in the SaaS product, using Row-Level Security and guest tokens to enforce per-customer data isolation across datalake-backed dashboards.</li>
+                <li>Built an internal RAG chatbot over Slack and Confluence data using OpenSearch as the vector knowledge base, enabling staff to query product knowledge conversationally.</li>
               </ul>
             </div>
           </div>
@@ -82,12 +64,9 @@
               <h4>Data Scientist</h4>
               <p class="meta">October 2018 – April 2020 &nbsp;·&nbsp; Toronto, Ontario, Canada</p>
               <ul>
-                <li>Developed infrastructure to generate visual reports on client time series data using Python and Plotly.</li>
-                <li>Extracted data from REST APIs and parsed responses into structured formats using Spark Scala.</li>
-                <li>Deployed to production environments on AWS EC2 after local testing.</li>
-                <li>Data engineered datasets from large unstructured complex databases.</li>
-                <li>Wrote a parser in Java for extracting HBase data containing protobuf, exporting as structured JSON.</li>
-                <li>Prototyped cloud scalability using Reinforcement Learning to create cluster expansion/shrink policies.</li>
+                <li>Built automated reporting infrastructure in Python and Plotly to visualise client Hadoop/Spark cluster performance metrics — extracting data from YARN and cluster management REST APIs via Spark Scala, cleaning and structuring raw cluster telemetry, and delivering insights as client-facing reports.</li>
+                <li>Wrote a standalone Java parser to extract HBase data serialised as Protocol Buffers, exporting structured JSON for cluster usage analytics and reporting.</li>
+                <li>Prototyped RL-based autoscaling policies for Hadoop clusters using cost as reward signal to model cluster expansion and shrink decisions.</li>
               </ul>
             </div>
           </div>
@@ -99,11 +78,10 @@
               <h4>Senior Data Scientist</h4>
               <p class="meta">June 2017 – July 2018</p>
               <ul>
-                <li>Contracted to a major Irish bank to develop HR Analytics and business insights.</li>
-                <li>Processed HR platform data using IBM Insights and Python.</li>
-                <li>Implemented Neural Networks with TensorFlow to model customer churn for a telecoms client.</li>
-                <li>Deployed and debugged Hive, Pig, and Spark jobs in Ambari on Oracle Cloud and Azure.</li>
-                <li>Implemented Red Sqirl environment on Azure using JSON config templating.</li>
+                <li>Contracted to a major Irish bank to develop HR analytics and business insights using IBM Insights and Python.</li>
+                <li>Evaluated TensorFlow Neural Networks for customer churn modelling on telecoms subscriber data, achieving comparable performance to the production model as a POC.</li>
+                <li>Deployed and debugged Hive, Pig, and Spark jobs in Ambari on Oracle Cloud and Azure for client data workflows.</li>
+                <li>Deployed and configured Red Sqirl environments for clients on Azure using JSON config templating, enabling self-service big data workflow execution without Hadoop expertise.</li>
               </ul>
             </div>
 
@@ -111,8 +89,8 @@
               <h4>Data Scientist</h4>
               <p class="meta">November 2015 – June 2017</p>
               <ul>
-                <li>Maintained and updated predictive models using Sklearn — Random Forest, Logistic Regression, SVM, Gradient Boost.</li>
-                <li>Automated a campaign evaluation dashboard monitoring customer retention and revenue using PL/SQL and Tableau.</li>
+                <li>Maintained and updated production churn prediction models using Sklearn — Random Forest, Logistic Regression, SVM, Gradient Boost — incorporating social network Key Influencer scores as features.</li>
+                <li>Automated a multi-client campaign evaluation dashboard in PL/SQL and Tableau, enabling telecoms clients to compare revenue lift between control and target groups across churn-reduction campaigns — monitored weekly to validate model ROI.</li>
                 <li>Engineered features during data cleansing and preparation inside a data warehouse to improve model and KPI quality.</li>
               </ul>
             </div>
@@ -121,8 +99,8 @@
               <h4>Java Developer</h4>
               <p class="meta">December 2013 – November 2015</p>
               <ul>
-                <li>Developed backend components of Red Sqirl in Java, integrating Hive, Pig, and Oozie for Hadoop workflows.</li>
-                <li>Migrated client processes from a legacy ETL platform to a modern Oracle-based ETL pipeline.</li>
+                <li>Developed backend components of Red Sqirl — Idiro's proprietary Hadoop workflow platform (similar to KNIME/RapidMiner) — in Java, integrating Hive, Pig, Spark, Giraph, and Oozie for visual job orchestration across HDFS.</li>
+                <li>Built core components of Idiro's multi-client Oracle ETL platform in PL/SQL — ingesting client data via SFTP, running automated QA before processing, normalising client-specific data formats through a mapper stage, and providing operational logging throughout.</li>
               </ul>
             </div>
 
@@ -130,9 +108,8 @@
               <h4>Data Miner</h4>
               <p class="meta">April 2013 – December 2013 &nbsp;·&nbsp; Dublin, Ireland</p>
               <ul>
-                <li>Benchmarked an internal Hadoop cluster for network analysis using Apache Giraph.</li>
-                <li>Migrated a C network algorithm to C++, implementing Dijkstra's shortest path and related algorithms.</li>
-                <li>Documented platform functionality using PLDoc and other documentation tools.</li>
+                <li>Benchmarked Apache Giraph on an internal Hadoop cluster to characterise resource scaling for graph algorithms, measuring performance from 1–2M up to hundreds of millions of nodes to inform infrastructure planning for production network analysis.</li>
+                <li>Migrated a proprietary Key Influencer scoring algorithm from C to C++, incorporating Dijkstra's shortest path as a core component to identify high-influence subscribers in telecoms networks — KI scores were used as features in production churn prediction models.</li>
               </ul>
             </div>
           </div>
@@ -174,23 +151,28 @@
           <div>
             <span class="skill-tag">Python</span>
             <span class="skill-tag">SQL</span>
-            <span class="skill-tag">Data Science</span>
             <span class="skill-tag">AWS</span>
+            <span class="skill-tag">Amazon Bedrock</span>
+            <span class="skill-tag">RAG</span>
+            <span class="skill-tag">LLM Agents</span>
+            <span class="skill-tag">OpenSearch</span>
             <span class="skill-tag">Terraform</span>
             <span class="skill-tag">Docker</span>
             <span class="skill-tag">Golang</span>
+            <span class="skill-tag">Airflow</span>
             <span class="skill-tag">Spark</span>
             <span class="skill-tag">Hadoop</span>
             <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Apache Superset</span>
+            <span class="skill-tag">Packer</span>
+            <span class="skill-tag">Ansible</span>
+            <span class="skill-tag">GitHub Actions</span>
             <span class="skill-tag">TensorFlow</span>
             <span class="skill-tag">Sklearn</span>
             <span class="skill-tag">Plotly</span>
-            <span class="skill-tag">Airflow</span>
             <span class="skill-tag">Java</span>
           </div>
 
-          <h3>Honors &amp; Awards</h3>
-          <p style="font-size:0.9em;">🏆 Imagine Cup Ireland Finalist</p>
 
         </aside>
 
